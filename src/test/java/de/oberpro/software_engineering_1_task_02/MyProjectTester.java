@@ -13,7 +13,7 @@ import junit.framework.TestCase;
  */
 public class MyProjectTester extends TestCase
 {
-	Project example1;
+	IfProject example1;
 	
 	@Before
 	public void setUp(){

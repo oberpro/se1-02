@@ -58,4 +58,11 @@ public class MyProjectTester extends TestCase
 	{
 		assertFalse(example1.isWellSorted(new String[] {}));
 	}
+
+	@Test
+	public void test_example1_06()
+	{
+		assertFalse(example1.isWellSorted(new String[]
+		{ "A" }));
+	}
 }

@@ -37,7 +37,16 @@ public class Project implements IfProject
 			{
 				for (String b : needle)
 				{
-					if (b != null && !a.equalsIgnoreCase(b))
+					boolean ok = false;
+					for (String c : haystack)
+					{
+						if (b != null && c != null && b.equalsIgnoreCase(c))
+						{
+							ok = true;
+							break;
+						}
+					}
+					if (!ok)
 					{
 						return false;
 					}

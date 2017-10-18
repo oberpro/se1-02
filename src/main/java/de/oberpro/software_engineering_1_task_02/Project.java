@@ -64,6 +64,10 @@ public class Project implements IfProject
 		for (int i = 0; i < sequence.length; i++)
 		{
 			String task = sequence[i];
+			if (inArray(task, done))
+			{
+				return false;
+			}
 			for (String[] relation : this.relations)
 			{
 				if (relation[1].equalsIgnoreCase(task))

@@ -59,7 +59,7 @@ public class Project implements IfProject
 
 	public boolean isWellSorted(String[] sequence)
 	{
-		if (sequence.length < 1)
+		if (sequence.length < 2)
 		{
 			return false;
 		}

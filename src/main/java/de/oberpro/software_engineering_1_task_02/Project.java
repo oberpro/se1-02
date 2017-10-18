@@ -59,6 +59,10 @@ public class Project implements IfProject
 
 	public boolean isWellSorted(String[] sequence)
 	{
+		if (sequence.length < 1)
+		{
+			return false;
+		}
 		System.out.println("checking sequence " + arrayToString(sequence));
 		String[] done = new String[sequence.length];
 		for (int i = 0; i < sequence.length; i++)
@@ -100,6 +104,10 @@ public class Project implements IfProject
 		String s = "";
 		for (int i = 0; i < array.length; i++)
 		{
+			if (array[i] == null)
+			{
+				continue;
+			}
 			s += array[i];
 			if (i < array.length - 1)
 			{
